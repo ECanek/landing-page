@@ -7,8 +7,11 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="contenedor">
@@ -19,25 +22,26 @@
     </div>
     <div class="lateral">
       <div class="lateral-parrafo">
-        <!--Eliminar <br>-->
+        
         <h1>Build the community your fans will love</h1>
         <p>Huddle re-imagines the way wey build communities,
         you have a voice, but so does your audience,
         create connections with your users as you engange in genuine discuttion.</p>
+        <div class="contenedor-boton">
+          <!--No usar inline style-->
+          <a href="#" class="boton">register</a>
+        </div> 
       </div>
-      <div class="contenedor-boton">
-        <!--No usar inline style-->
-        <a href="#" class="boton">register</a>
+     
+      <div class="botones-final" >
+        <button class="boton-circular"><i class="fa-brands fa-facebook-f"></i></button>
+        <button class="boton-circular"><i class="fa-brands fa-twitter"></i></button>
+        <button class="boton-circular"><i class="fa-brands fa-instagram"></i></button>
       </div>
     </div>
   </div>
-  <div class="botones-final" >
-    <button class="boton-circular">1</button>
-    <button class="boton-circular">2</button>
-    <button class="boton-circular">3</button>
-  </div>
-  <!-- Eliminar div
-  <div class="pie"></div> -->
+
+  
 </div>
 <footer>
   <p class="attribution">

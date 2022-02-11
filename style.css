@@ -10,6 +10,7 @@
 body {
  background: url("./images/bg-desktop.svg"), linear-gradient(0deg, rgb(85, 4, 85), rgb(155, 46, 155));
  width: 100vw;
+ font-family: 'Poppins', sans-serif;
 }
 
 /*
@@ -27,33 +28,46 @@ body {
 
 .cabecera{
  height: 10rem;
+ padding-left: 6rem;
 }
 
 .main-content {
  display: flex;
  justify-content: space-around;
  align-items: center;
+ max-width: 200rem;
+ 
 }
 
 .cabecera img{
-    width: 20rem;
-    height:10rem;
+    max-width:20rem;
+    height:20rem;
+   
+}
+.contenido img{
+    padding-left:5rem ;
+    padding-right: 5rem;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
 
 }
 .lateral{
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2rem;
+    padding-right: 6rem;
+    padding-top: 15rem;
+    
 }
 
 .lateral h1{
-    font-family: poppins;
     color: white;
-    font-size: 30px;
+    font-size: 5rem;
+    font-weight: 600;
+    
 }
 .lateral p{
     color: white;
-    font-family: poppins;
-    font-size: 20px;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 
@@ -62,20 +76,31 @@ body {
     text-decoration: none;
     background: white;
     color: purple;
-    border-radius: 30px;
-    font-size: 20px;
+    
+    /*Convertir a unidades relatvas*/
+    border-radius: 3rem;
+    font-size: 2rem;
     font-weight: normal;
     text-align: center;
-    padding: 10px 40px;
+    /* padding: top/bottom right/left; */
+    padding: 1rem 4rem; 
+    /*
+    * padding: 10px 40px 10px 40px;
+    * padding-top: 10px;
+    * padding-left: 40px;
+    * padding-bottom: 10px;
+    * padding-right: 40px;
+    */
     display: inline-block;
     margin-top: 1rem;
     
 }
-
-button:hover {
-    background-color: firebrick;
+a:hover{
+    background-color: rgb(228, 119, 173);
+    color: white;
 }
 
+/* pseudoclase :hover -> Cuando el usuario se situa con el mouse por encima del elemento */
 /* 
 * Pseudoclase: En algunos html indican alguna accion de usuario a un elemnto.
 * :hover
@@ -83,27 +108,59 @@ button:hover {
 * :visited
 * :focus 
 */
+
+button:hover {
+    /*Cambiar color */
+    
+    background-color: rgb(228, 119, 173);
+    
+    
+}
+
+
 .lateral {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+
 }
 
 .botones-final {
-    padding-left: 110rem;
+    /*padding-left: 110rem;*/
     /* Evitar usar reglas absolutas*/
     /*margin-left: 1170px;*/
+    align-self: flex-end;
+
 }
 
 .boton-circular {
     border-radius: 5rem;
     font-size: 3rem;
     font-weight: normal;
-    text-justify: unset;
-    padding: 1rem;
-}
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    margin-right: 1rem;
+    
+    
 
+}
+.boton-circular:hover{
+    cursor: pointer;
+    
+    
+}
+.fa-twitter, .fa-instagram{
+    font-size: 2.5rem;
+    padding: 1rem;
+    
+}
+.fa-facebook-f{
+    font-size: 2.5rem;
+    padding: 1rem 1.5rem;
+    
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
